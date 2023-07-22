@@ -1,9 +1,19 @@
+@font-face {
+	font-family: 'VT323';
+	src: url('/fonts/vt323/VT323-Regular.woff2') format('woff2'),
+		url('/fonts/vt323/VT323-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
 body {
 	--sb-track-color: #150914;
 	--sb-thumb-color: #9546a2;
 	--sb-size: 20px;
-
 	scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+	font-family: 'VT323', monospace;
+	font-weight: 400;
 }
 
 body::-webkit-scrollbar {
@@ -18,4 +28,8 @@ body::-webkit-scrollbar-thumb {
 	background-image: url('/img/scroll-icon.svg');
 	background-repeat: no-repeat;
 	background-size: contain;
+}
+
+.text-center {
+	text-align: center;
 }
