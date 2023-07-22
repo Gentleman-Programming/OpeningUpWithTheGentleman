@@ -1,15 +1,15 @@
 <script lang="ts">
-	type Element = 'p' | 'h1' | 'h2';
+	import { TextElementType } from '@/models/GText';
 
-	export let variant: Element = 'p';
+	export let variant: TextElementType = TextElementType.P;
 </script>
 
-<svelte:element this={variant} class="shared {$$restProps.class || ''}">
+<svelte:element this={variant} class="text-element {$$restProps.class || ''}">
 	<slot />
 </svelte:element>
 
 <style>
-	.shared {
+	.text-element {
 		color: #fff;
 		text-shadow: 0 4px 4px #89024a;
 		font-family: VT323;
