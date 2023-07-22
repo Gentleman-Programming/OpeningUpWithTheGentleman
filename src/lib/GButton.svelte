@@ -1,10 +1,11 @@
 <script lang="ts">
-	import { ButtonTypes } from '../models';
+	import { ButtonTypes, ButtonFontSize } from '../models';
 
 	export let type: ButtonTypes = ButtonTypes.BUTTON;
+	export let fontSize: ButtonFontSize = ButtonFontSize.MEDIUM;
 </script>
 
-<button class="button" {type}>
+<button class="button" {type} style="font-size: {fontSize};">
 	<slot />
 </button>
 
