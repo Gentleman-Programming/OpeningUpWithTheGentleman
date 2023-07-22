@@ -10,7 +10,8 @@
 body {
 	--sb-track-color: #150914;
 	--sb-thumb-color: #9546a2;
-	--sb-size: 20px;
+	--sb-size: 16px;
+	--sb-bg: #1a1a1a;
 	scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
 	font-family: 'VT323', monospace;
 	font-weight: 400;
@@ -25,9 +26,13 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-	background-image: url('/img/scroll-icon.svg');
+	background-image: url('/img/scroll-icon.svg'),
+		linear-gradient(to bottom, var(--sb-bg), var(--sb-bg));
 	background-repeat: no-repeat;
 	background-size: contain;
+	background-position: center;
+	border-radius: 8px;
+	border: 1px solid #f977bc;
 }
 
 .text-center {
