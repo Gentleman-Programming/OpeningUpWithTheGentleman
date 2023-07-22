@@ -1,3 +1,16 @@
+
+:root {
+	--primary: #89024a;
+	--secondary: #ea1889;
+	--secondary-light: #f872a0;
+	--secondary-dark: #700469;
+	--error: #ba1a1a;
+	--success: #5dc126;
+	--background: #fffbff;
+	--text-dark: #ffffff;
+	--text-ligth: #000000;
+}
+
 @font-face {
 	font-family: 'VT323';
 	src: url('/fonts/vt323/VT323-Regular.woff2') format('woff2'),
