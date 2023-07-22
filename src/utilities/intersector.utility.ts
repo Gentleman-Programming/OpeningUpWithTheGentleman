@@ -8,7 +8,7 @@ class CustomIntersectionObserver {
 	private customEntries = new Map<string, CustomElement>();
 
 	private init() {
-		if (typeof window === 'undefined') return;
+		if (typeof IntersectionObserver === undefined) return;
 		this.observer = new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
 				if (!entry.isIntersecting) return;
