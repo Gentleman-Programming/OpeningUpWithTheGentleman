@@ -8,4 +8,8 @@
 	--background: #fffbff;
 	--text-dark: #ffffff;
 	--text-ligth: #000000;
+	--font-family: VT323;
+}
+body {
+	font-family: var(--font-family);
 }
