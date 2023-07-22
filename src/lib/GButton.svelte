@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { ButtonTypes } from '../models';
-	export const type: ButtonTypes = ButtonTypes.BUTTON;
+
+	export let type: ButtonTypes = ButtonTypes.BUTTON;
 </script>
 
 <button class="button" {type}>
@@ -9,8 +10,18 @@
 
 <style>
 	.button {
-		padding: 0.5rem 1rem;
+		padding: 0.8rem 1.5rem;
 		background-color: var(--secondary);
+		outline: none;
+		border: none;
+		border-radius: 16px;
 		color: var(--text-dark);
+		cursor: pointer;
+		flex-shrink: 0;
+		transition: background-color 0.5s ease;
+		text-shadow: 0px 4px 4px 4px #89024a;
+	}
+	.button:hover {
+		background-color: var(--secondary-dark);
 	}
 </style>
