@@ -1,6 +1,6 @@
 <script>
 	import GText from '@/components/GText.svelte';
-	import { TextElementType } from '@/models/GText';
+	import { TextElementType } from '@/models/GText.d';
 </script>
 
 <GText variant={TextElementType.H1} class="text-center">“Opening Up With The Gentleman”</GText>

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { TextElementType } from '@/models/GText';
+	import { TextElementType } from '@/models/GText.d';
 
 	export let variant: TextElementType = TextElementType.P;
 </script>
