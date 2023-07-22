@@ -1,8 +1,10 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { fade } from 'svelte/transition';
-	import { CustomElement } from '../models';
+	import { AnimationTypes } from '../models';
+	import type { CustomElement } from '../models/intersector.model';
 	import { customIntersectionObserver } from '../utilities/intersector.utility';
+
+	export let animation = AnimationTypes.FADE;
 
 	let customElement = {} as CustomElement;
 	let animate = false;
@@ -20,7 +22,7 @@
 
 <div bind:this={componentRef}>
 	{#if animate}
-		<div transition:fade={{ duration: 1500 }}>
+		<div transition:animation={{ duration: 1500 }}>
 			<slot />
 		</div>
 	{/if}
