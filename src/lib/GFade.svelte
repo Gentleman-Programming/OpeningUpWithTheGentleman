@@ -15,15 +15,11 @@
 		customElement.callBack = () => {
 			animate = true;
 		};
-		customIntersectionObserver.observeElement(customElement);
-		return () => customIntersectionObserver.unobserveElement(customElement);
+		const id = customIntersectionObserver.observeElement(customElement);
+		return () => customIntersectionObserver.unobserveElement(id);
 	});
 </script>
 
-<div bind:this={componentRef}>
-	{#if animate}
-		<div transition:animation={{ duration: 1500 }}>
-			<slot />
-		</div>
-	{/if}
+<div bind:this={componentRef} style="opacity: {animate ? 1 : 0}; transition: opacity 1500ms;">
+	<slot />
 </div>
