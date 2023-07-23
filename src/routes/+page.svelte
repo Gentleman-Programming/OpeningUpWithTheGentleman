@@ -1,6 +1,6 @@
 <script>
-	import GLayoutContainer from '@/components/GLayoutContainer.svelte';
-	import GText from '@/components/GText.svelte';
+	import GLayoutContainer from '@/lib/GLayoutContainer.svelte';
+	import GText from '@/lib/GText.svelte';
 	import { TextElementType } from '@/models/GText.d';
 </script>
 
