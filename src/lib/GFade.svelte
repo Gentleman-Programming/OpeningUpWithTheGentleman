@@ -6,6 +6,7 @@
 
 	export let animation = AnimationTypes.FADE;
 
+	export let container: boolean = false;
 	let customElement = {} as CustomElement;
 	let animate = false;
 	let componentRef: HTMLDivElement;
@@ -20,7 +21,8 @@
 	});
 </script>
 
-<div bind:this={componentRef}>
+{container}
+<div class={container ? 'section-container' : ''} bind:this={componentRef}>
 	{#if animate}
 		<div transition:animation={{ duration: 1500 }}>
 			<slot />
