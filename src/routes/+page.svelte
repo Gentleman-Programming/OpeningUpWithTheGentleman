@@ -1,7 +1,6 @@
 <script>
 	import GFade from '@/lib/GFade.svelte';
 	import GParallax from '@/lib/GParallax.svelte';
-	import GHero from '@/lib/GParallax.svelte';
 	import GText from '@/lib/GText.svelte';
 	import { AnimationTypes } from '@/models';
 </script>
