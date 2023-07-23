@@ -1,5 +1,7 @@
 <script>
 	import GText from '@/components/GText.svelte';
+	import GImgZoom from '@/lib/GImgZoom/GImgZoom.svelte';
+	import GTop from '@/lib/GTop/GTop.svelte';
 	import { TextElementType } from '@/models/GText.d';
 </script>
 
@@ -76,10 +78,14 @@
 		cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como
 		por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
 	</GText>
-
-	<GText variant={TextElementType.H2}>Alan Buscalia</GText>
 </div>
-
+<div>
+	<GText class="text-center" variant={TextElementType.H2}>
+		Alan Buscalia
+	</GText>
+	<GImgZoom />
+</div>
+<GTop />
 <style>
 	div {
 		max-width: 35rem;
