@@ -53,7 +53,8 @@ export const actions = {
 		`;
 
 		try {
-			const id = await sendMail(html);
+			const formEmail = `${formData.email}`;
+			const id = await sendMail({ html, email: formEmail });
 			if (!id) {
 				return fail(422, {
 					success: false,
