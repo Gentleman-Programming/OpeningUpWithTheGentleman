@@ -1,15 +1,13 @@
 <script>
 	import GFade from '@/lib/GFade.svelte';
-	import GLayoutContainer from '@/lib/GLayoutContainer.svelte';
+	import GParallax from '@/lib/GParallax.svelte';
+	import GHero from '@/lib/GParallax.svelte';
 	import GText from '@/lib/GText.svelte';
 	import { AnimationTypes } from '@/models';
-	import { TextElementType } from '@/models/GText.d';
 </script>
 
 <div>
-	<GLayoutContainer>
-		<GText variant={TextElementType.H1} class="text-center">“Opening Up With The Gentleman”</GText>
-	</GLayoutContainer>
+	<GParallax>“Opening Up With The Gentleman”</GParallax>
 
 	<GFade container animation={AnimationTypes.FADE}>
 		<GText class="text-center">
@@ -37,10 +35,3 @@
 		</GText>
 	</GFade>
 </div>
-
-<style>
-	div {
-		max-width: 35rem;
-		margin-inline: auto;
-	}
-</style>
