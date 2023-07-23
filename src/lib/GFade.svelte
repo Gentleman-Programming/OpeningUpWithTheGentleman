@@ -9,15 +9,14 @@
 	let customElement = {} as CustomElement;
 	let animate = false;
 	let componentRef: HTMLDivElement;
-	let id = '';
 
 	onMount(() => {
 		customElement.element = componentRef;
 		customElement.callBack = () => {
 			animate = true;
 		};
-		id = customIntersectionObserver.observeElement(customElement);
-		return () => customIntersectionObserver.unobserveElement(id);
+		customIntersectionObserver.observeElement(customElement);
+		return () => customIntersectionObserver.unobserveElement(customElement);
 	});
 </script>
 

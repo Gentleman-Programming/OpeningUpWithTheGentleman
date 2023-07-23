@@ -5,37 +5,39 @@ export interface CustomElement {
 
 class CustomIntersectionObserver {
   private observer: IntersectionObserver | null = null;
-  private customEntries: Map<string, CustomElement> = new Map();
+  private customEntries: CustomElement[] = [];
 
   private init() {
-    console.log('init');
     if (typeof IntersectionObserver !== undefined)
       this.observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            this.interceptCallback();
+            this.interceptCallback(entry);
           }
         });
       });
 
   }
 
-  private interceptCallback(id: string) {
-    this.customEntries.get(id)?.callBack();
+  private interceptCallback(entry: IntersectionObserverEntry) {
+    const foundElement = this.customEntries.find(
+      (customElement) => JSON.stringify(customElement.element) === JSON.stringify(entry.target)
+    )
+    if (foundElement) {
+      foundElement.callBack();
+    }
   }
 
   observeElement(customElement: CustomElement) {
-    const id = crypto.randomUUID();
-    this.customEntries.set(id, customElement);
+    this.customEntries.push(customElement);
     if (!this.observer) this.init();
     this.observer!.observe(customElement.element);
-    return id;
   }
 
-  unobserveElement(id: string) {
-    console.log('deleted');
-    this.observer!.unobserve(this.customEntries.get(id)!.element);
-    this.customEntries.delete(id);
+  unobserveElement(customElement: CustomElement) {
+    this.observer!.unobserve(customElement.element);
+    this.customEntries = this.customEntries.filter(
+      (customElement) => JSON.stringify(customElement.element) !== JSON.stringify(customElement.element))
   }
 }
 
