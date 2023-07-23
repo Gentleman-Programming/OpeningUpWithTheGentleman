@@ -85,4 +85,4 @@
 		max-width: 35rem;
 		margin-inline: auto;
 	}
-
+</style>
