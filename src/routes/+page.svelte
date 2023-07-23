@@ -1,10 +1,10 @@
 <script>
+	import GParallax from '@/lib/GParallax.svelte';
 	import GText from '@/lib/GText.svelte';
-	import { TextElementType } from '@/models/GText.d';
+	import { TextElementType } from '@/models/GText.model';
 </script>
 
-<GText variant={TextElementType.H1} class="text-center">“Opening Up With The Gentleman”</GText>
-
+<GParallax>“Opening Up With The Gentleman”</GParallax>
 <div>
 	<GText variant={TextElementType.H2} class="text-center">
 		Bienvenido a este espacio donde TÚ eres el contenido
