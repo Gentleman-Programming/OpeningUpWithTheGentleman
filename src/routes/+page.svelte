@@ -34,3 +34,10 @@
 		</GText>
 	</GFade>
 </div>
+
+<style>
+	div {
+		max-width: 35rem;
+		margin-inline: auto;
+	}
+</style>
