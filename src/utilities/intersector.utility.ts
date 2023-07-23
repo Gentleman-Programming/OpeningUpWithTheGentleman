@@ -10,17 +10,22 @@ class CustomIntersectionObserver {
   private init() {
     if (typeof IntersectionObserver !== undefined)
       this.observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry, index) => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            this.interceptCallback(index);
+            this.interceptCallback(entry);
           }
         });
       });
 
   }
 
-  private interceptCallback(index: number) {
-    this.customEntries[index].callBack();
+  private interceptCallback(entry: IntersectionObserverEntry) {
+    const foundElement = this.customEntries.find(
+      (customElement) => JSON.stringify(customElement.element) === JSON.stringify(entry.target)
+    )
+    if (foundElement) {
+      foundElement.callBack();
+    }
   }
 
   observeElement(customElement: CustomElement) {

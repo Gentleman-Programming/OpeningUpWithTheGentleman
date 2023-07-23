@@ -1,5 +1,5 @@
 <script>
-	import GText from '@/components/GText.svelte';
+	import GText from '@/lib/GText.svelte';
 	import { TextElementType } from '@/models/GText.d';
 </script>
 
@@ -84,4 +84,4 @@
 		max-width: 35rem;
 		margin-inline: auto;
 	}
-</style>
+
