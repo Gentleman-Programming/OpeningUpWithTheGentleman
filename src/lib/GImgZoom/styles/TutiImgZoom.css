@@ -1,11 +1,6 @@
-@font-face {
-  font-family: 'Exoct';
-  src: url('https://assets.codepen.io/1480814/films.EXH_____.ttf');
-}
-
 .TutiImgZoom__container {
   margin: 0;
-  background-color:#FDD0D6;
+  background-color:#FDD0D6;/*borar cuando este en el main*/
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: min(230px, 35vmin);
@@ -34,6 +29,7 @@
   transform-origin: bottom;
   filter: brightness(0.9);
   transition: 0.5s;
+  /*background-color: var(--secondary-dark);*/
   background-image: url(https://i.imgur.com/CVlmmUj.jpeg);
 }
 
@@ -52,13 +48,17 @@
   grid-area: 1/1;
   width: calc(100% + 40px);
   font-family: 'Exoct', sans-serif;
-  color: #C91186;
+  /*color: var(--text-dark);*/
+  color:#fff;
+  text-shadow: -2px -2px 0 #FCA2B7, 2px -2px 0 #FCA2B7, -2px 2px 0 #FCA2B7, 2px 2px 0 #FCA2B7;
+  /*text-shadow: -2px -2px 0 var(--secondary-dark), 2px -2px 0 var(--secondary-dark), -2px 2px 0 var(--secondary-dark), 2px 2px 0 var(--secondary-dark);*/
   font-size: min(32px, 5vmin);
   text-align: center;
   place-self: end center;
   transform: perspective(500px) translateY(100%) rotateX(-90deg);
   backface-visibility: hidden;
   transform-origin: top;
+  /*background: var(--primary-dark);*/
   background: #000;
   transition: 0.5s;
 }
