@@ -1,10 +1,11 @@
 <script lang="ts">
 	import { TextElementType } from '@/models/GText.d';
 
+	export const id: string = '';
 	export let variant: TextElementType = TextElementType.P;
 </script>
 
-<svelte:element this={variant} class="text-element {$$restProps.class || ''}">
+<svelte:element this={variant} {id} class="text-element {$$restProps.class || ''}">
 	<slot />
 </svelte:element>
 

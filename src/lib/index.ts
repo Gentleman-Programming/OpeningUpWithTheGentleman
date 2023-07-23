@@ -1,1 +1,3 @@
-// place files you want to import through the `$lib` alias in this folder.
+export * from './GFade.svelte'
+export * from './GButton.svelte'
+export * from './GText.svelte'
