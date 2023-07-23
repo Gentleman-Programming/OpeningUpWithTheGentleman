@@ -6,83 +6,31 @@
 <GText variant={TextElementType.H1} class="text-center">“Opening Up With The Gentleman”</GText>
 
 <div>
-	<GText class="text-center">
-		Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
-		ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N.
-		del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló
-		de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino
-		que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente
-		igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las
-		cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como
-		por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+	<GText variant={TextElementType.H2} class="text-center">
+		Bienvenido a este espacio donde TÚ eres el contenido
+	</GText>
+	<GText variant={TextElementType.H3} class="text-center">
+		¿ Qué es "Opening Up With The Gentleman"?
 	</GText>
 	<GText class="text-center">
-		Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
-		ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N.
-		del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló
-		de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino
-		que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente
-		igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las
-		cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como
-		por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-	</GText>
-	<GText class="text-center">
-		Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
-		ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N.
-		del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló
-		de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino
-		que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente
-		igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las
-		cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como
-		por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-	</GText>
-	<GText class="text-center">
-		Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
-		ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N.
-		del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló
-		de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino
-		que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente
-		igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las
-		cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como
-		por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-	</GText>
-	<GText class="text-center">
-		Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
-		ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N.
-		del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló
-		de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino
-		que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente
-		igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las
-		cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como
-		por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-	</GText>
-	<GText class="text-center">
-		Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
-		ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N.
-		del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló
-		de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino
-		que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente
-		igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las
-		cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como
-		por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-	</GText>
-	<GText class="text-center">
-		Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
-		ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N.
-		del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló
-		de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino
-		que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente
-		igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las
-		cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como
-		por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+		En este espacio, ¡TÚ eres el contenido! 😃 Normalmente, la gente ve lo que haces y te busca por
+		cómo lo haces, pero... ¿pueden decir que conocen la cara detrás de la máscara? 🎭 "Opening Up
+		With The Gentleman" es un espacio destinado no solo para que tu comunidad te conozca mejor, sino
+		también para que otras personas descubran una visión más personal e íntima de ti. 🌟😊
 	</GText>
 
-	<GText variant={TextElementType.H2}>Alan Buscalia</GText>
+	<GText variant={TextElementType.H3} class="text-center">
+		¿ Quienes ya confirmaron su participación ?
+	</GText>
 </div>
 
 <style>
 	div {
-		max-width: 35rem;
-		margin-inline: auto;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
+		padding: 0rem 2rem;
 	}
-
+</style>
