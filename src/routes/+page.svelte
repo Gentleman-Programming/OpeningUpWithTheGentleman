@@ -1,7 +1,7 @@
 <script>
-	import GLayoutContainer from '@/components/GLayoutContainer.svelte';
-	import GText from '@/components/GText.svelte';
 	import GFade from '@/lib/GFade.svelte';
+	import GLayoutContainer from '@/lib/GLayoutContainer.svelte';
+	import GText from '@/lib/GText.svelte';
 	import { AnimationTypes } from '@/models';
 	import { TextElementType } from '@/models/GText.d';
 </script>
