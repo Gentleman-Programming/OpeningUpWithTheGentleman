@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ButtonFontSize, ButtonTypes } from '@/models/button.model';
+	import { ButtonFontSize, ButtonTypes } from '@/models';
 
 	export let type: ButtonTypes = ButtonTypes.BUTTON;
 	export let fontSize: ButtonFontSize = ButtonFontSize.MEDIUM;

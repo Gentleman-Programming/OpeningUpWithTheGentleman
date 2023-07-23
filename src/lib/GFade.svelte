@@ -21,7 +21,6 @@
 </script>
 
 <div bind:this={componentRef}>
-	{JSON.stringify(animate)}
 	{#if animate}
 		<div transition:animation={{ duration: 1500 }}>
 			<slot />
