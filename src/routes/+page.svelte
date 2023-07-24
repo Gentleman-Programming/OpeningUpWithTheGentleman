@@ -1,5 +1,8 @@
 <script>
+	import GPanel from '@/lib/GPanel/GPanel.svelte';
+	import GFooter from '@/lib/GFooter/GFooter.svelte';
 	import GText from '@/lib/GText.svelte';
+	import GTop from '@/lib/GTop/GTop.svelte';
 	import { TextElementType } from '@/models/GText.d';
 </script>
 
@@ -76,12 +79,18 @@
 		cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como
 		por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
 	</GText>
-	<GText variant={TextElementType.H2}>Alan Buscalia</GText>
 </div>
+<div>
+	<GPanel />
+</div>
+<div>
+	<GFooter />
+</div>
+<GTop />
 
 <style>
 	div {
 		max-width: 35rem;
 		margin-inline: auto;
 	}
-
+</style>

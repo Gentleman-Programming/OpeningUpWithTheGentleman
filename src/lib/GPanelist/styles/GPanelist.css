@@ -1,11 +1,4 @@
-.container {
-	margin: 0;
-	padding: 50px 0 50px 0;
-	display: grid;
-	grid-auto-flow: column;
-	grid-auto-columns: min(230px, 35vmin);
-	place-content: end center;
-}
+
 
 .figure {
 	width: 100%;
@@ -54,7 +47,8 @@
 	font-size: min(2rem, 5vmin);
 	text-align: center;
 	place-self: end center;
-	transform: perspective(500px) translateY(100%) rotateX(-90deg);
+	padding: 15px ;
+	transform: perspective(500px) translateY(100%) rotateX(-80deg);
 	backface-visibility: hidden;
 	transform-origin: top;
 	background: var(--secondary-dark);
@@ -69,10 +63,23 @@
 }
 
 .figure:hover::before {
-	filter: brightness(0.7);
+	filter: brightness(0.5);
 	transform: perspective(500px) rotateX(60deg);
 }
 
 .figure:hover .figcaption {
-	transform: perspective(500px) translateY(100%) rotateX(-30deg);
+  border-radius: 0 0 25px 25px;
+	transform: perspective(500px) translateY(100%) rotateX(0);
+}
+
+.card {
+  display: flex;
+	padding: 10px 0 10px 0;
+  flex-direction: row;
+	justify-content: space-around;
+	align-content: space-between;
+	flex-wrap: wrap;
+	align-items: baseline;
+  background: var(--secondary-light);
+  border-radius: 25px;
 }

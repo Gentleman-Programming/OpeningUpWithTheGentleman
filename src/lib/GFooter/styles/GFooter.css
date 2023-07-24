@@ -1,0 +1,17 @@
+.footer {
+  padding: 3rem 0 0 0;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    var(--primary),
+    var(--background),
+    var(--primary)
+  ); /* This is the background color */
+}
