@@ -7,7 +7,7 @@
 	import './styles/GPanel.css';
 
 	let cards: GCardData[] = [];
-	const url = './src/lib/data/panelists.json';
+	const url = '/data/panelists.json';
 	onMount(async () => {
 		try {
 			const response = await fetch(url);

@@ -7,7 +7,7 @@
 	export let links: GLinkData[];
 	console.log('GIconRed->', links);
 	let icons: GIconData[] = [];
-	const url = './src/lib/data/icons.json';
+	const url = '/data/icons.json';
 	onMount(async () => {
 		try {
 			const response = await fetch(url);
