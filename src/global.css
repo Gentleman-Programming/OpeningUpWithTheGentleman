@@ -30,7 +30,7 @@ html {
     * Note: these values can be modified according to the requirements of each project.
     * feel free to play with them.
     */
-    font-size: calc(14px + (20.56 - 14) * ((100vw - 280px) / (1920- 280)));
+    font-size: calc(14px + (20.56 - 14) * ((100vw-280px) / (1920-280)));
     /* Fluid design: Fonts 👆🏽 */
 }
 
