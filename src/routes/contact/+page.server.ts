@@ -3,19 +3,19 @@ import type { Actions } from './$types';
 import { sendMail } from '@/services/mailer.service';
 
 export const actions = {
-	contact: async ({ request }) => {
-		const data = await request.formData();
-		const formData = Object.fromEntries(data);
-		const social_networks = data.getAll('social');
-		const concatData = Object.values(formData).concat(social_networks);
-		if (concatData.some((input) => String(input).trim().length < 2)) {
-			return fail(422, {
-				success: false,
-				error: 'Llena correctamente todos los campos'
-			});
-		}
+  contact: async ({ request }) => {
+    const data = await request.formData();
+    const formData = Object.fromEntries(data);
+    const social_networks = data.getAll('social');
+    const concatData = Object.values(formData).concat(social_networks);
+    if (concatData.some((input) => String(input).trim().length < 2)) {
+      return fail(422, {
+        success: false,
+        error: 'Llena correctamente todos los campos'
+      });
+    }
 
-		const html = `
+    const html = `
 		<table>
 			<tr>
 				<td style="padding:10px">
@@ -52,25 +52,25 @@ export const actions = {
 		</table>
 		`;
 
-		try {
-			const formEmail = `${formData.email}`;
-			const id = await sendMail({ html, email: formEmail });
-			if (!id) {
-				return fail(422, {
-					success: false,
-					message: 'Ha ocurrido un error, intente nuevamente'
-				});
-			}
-			return {
-				success: true,
-				message: 'Tus datos se han enviado correctamente'
-			};
-		} catch (error: any) {
-			console.log(error);
-			return fail(422, {
-				success: false,
-				error: error.message
-			});
-		}
-	}
+    try {
+      const formEmail = `${formData.email}`;
+      const id = await sendMail({ html, email: formEmail });
+      if (!id) {
+        return fail(422, {
+          success: false,
+          message: 'Ha ocurrido un error, intente nuevamente'
+        });
+      }
+      return {
+        success: true,
+        message: 'Tus datos se han enviado correctamente'
+      };
+    } catch (error: any) {
+      console.log(error);
+      return fail(422, {
+        success: false,
+        error: error.message
+      });
+    }
+  }
 } satisfies Actions;
