@@ -2,8 +2,7 @@
 	import { TextElementType } from '@/models/GText.model';
 	import GText from './GText.svelte';
 
-	export let img =
-		'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80';
+	export let img = '/img/header-bg.jpg';
 
 	let scroll = 0;
 </script>
@@ -38,6 +37,6 @@
 		background-position: var(--position);
 		background-repeat: no-repeat;
 		transform: scale(var(--scale));
-		filter: blur(2px) brightness(0.5);
+		filter: blur(2px) brightness(0.8);
 	}
 </style>

@@ -1,41 +1,51 @@
 [
   {
     "id": "1",
-    "date": "Martes, 8 de Abril",
+    "date": "",
     "rol": "presentador",
-    "time": "9:00",
-    "name": "Alan Buscaglia.",
-    "img": "https://i.imgur.com/eLCpium.png",
+    "time": "",
+    "name": "Alan Buscaglia",
+    "img": "/img/presentador.png",
     "links": [
       {
         "key": "1",
         "red": "Discord",
-        "url": "https://github.com/GentlemanProgramming"
+        "url": "https://discord.com/invite/KEavKkDc5Y"
       },
       {
         "key": "2",
         "red": "Twitch",
-        "url": "https://github.com/GentlemanProgramming"
+        "url": "https://www.twitch.tv/gentleman_programming"
       },
       {
         "key": "3",
         "red": "Twitter",
-        "url": "https://twitter.com/ikurotime"
+        "url": "https://twitter.com/G_Programming"
       },
       {
         "key": "3",
         "red": "Facebook",
-        "url": "https://twitter.com/ikurotime"
+        "url": "https://shorturl.at/jkmL6"
+      },
+      {
+        "key": "4",
+        "red": "Instagram",
+        "url": "https://www.instagram.com/gentlemanprogramming/"
+      },
+      {
+        "key": "5",
+        "red": "GitHub",
+        "url": "https://github.com/Gentleman-Programming"
       }
     ]
   },
   {
     "id": "2",
-    "date": "Martes, 8 de Abril",
+    "date": "Martes, 25 de Julio",
     "rol": "invitado",
-    "time": "9:00",
+    "time": "21:30 hs España",
     "name": "David Huertas",
-    "img": "https://i.imgur.com/YRMyvGN.png",
+    "img": "/img/David.png",
     "links": [
       {
         "key": "1",
@@ -96,11 +106,11 @@
   },
   {
     "id": "3",
-    "date": "Martes, 8 de Abril",
+    "date": "Miércoles, 26 de Abril",
     "rol": "invitado",
     "time": "9:00",
     "name": "Daniel Nuske",
-    "img": "https://i.imgur.com/kuMzVzk.png",
+    "img": "/img/Daniel.png",
     "links": [
       {
         "key": "1",
@@ -126,11 +136,11 @@
   },
   {
     "id": "4",
-    "date": "Martes, 8 de Abril",
+    "date": "Viernes, 28 de Julio",
     "rol": "invitado",
-    "time": "H 9:00",
+    "time": "21:30 hs España",
     "name": "Arturo Zarzalejo",
-    "img": "https://i.imgur.com/hps99fN.png",
+    "img": "/img/Arturo.png",
     "links": [
       {
         "key": "1",
