@@ -2,52 +2,52 @@
   {
     "id": "1",
     "name": "Discord",
-    "path": "./src/assets/icon/DiscordIcon/DiscordIcon.svg"
+    "path": "./src/lib/assets/icon/DiscordIcon/DiscordIcon.svg"
   },
   {
     "id": "2",
     "name": "Facebook",
-    "path": "./src/assets/icon/FacebookIcon/FacebookIcon.svg"
+    "path": "./src/lib/assets/icon/FacebookIcon/FacebookIcon.svg"
   },
   {
     "id": "3",
     "name": "GitHub",
-    "path": "./src/assets/icon/GithubIcon/GithubIcon.svg"
+    "path": "./src/lib/assets/icon/GithubIcon/GithubIcon.svg"
   },
   {
     "id": "4",
     "name": "Instagram",
-    "path": "./src/assets/icon/InstagramIcon/InstagramIcon.svg"
+    "path": "./src/lib/assets/icon/InstagramIcon/InstagramIcon.svg"
   },
   {
     "id": "5",
     "name": "LinkedIn",
-    "path": "./src/assets/icon/LinkedInIcon/LinkedInIcon.svg"
+    "path": "./src/lib/assets/icon/LinkedInIcon/LinkedInIcon.svg"
   },
   {
     "id": "6",
     "name": "TikTok",
-    "path": "./src/assets/icon/TikTokIcon/TikTokIcon.svg"
+    "path": "./src/lib/assets/icon/TikTokIcon/TikTokIcon.svg"
   },
   {
     "id": "7",
     "name": "Twitch",
-    "path": "./src/assets/icon/TwitchIcon/TwitchIcon.svg"
+    "path": "./src/lib/assets/icon/TwitchIcon/TwitchIcon.svg"
   },
   {
     "id": "8",
     "name": "Twitter",
-    "path": "./src/assets/icon/TwitterIcon/TwitterIcon.svg"
+    "path": "./src/lib/assets/icon/TwitterIcon/TwitterIcon.svg"
   },
   {
     "id": "9",
     "name": "YouTube",
-    "path": "./src/assets/icon/YouTubeIcon/YouTubeIcon.svg"
+    "path": "./src/lib/assets/icon/YouTubeIcon/YouTubeIcon.svg"
   },
   {
     "id": "10",
     "name": "Web",
-    "path": "./src/assets/icon/WebIcon/WebIcon.svg"
+    "path": "./src/lib/assets/icon/WebIcon/WebIcon.svg"
   },
   {
     "id": "11",

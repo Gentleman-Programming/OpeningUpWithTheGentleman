@@ -2,7 +2,7 @@
 	import GText from '@/lib/GText.svelte';
 	import { onMount } from 'svelte';
 	import type { GIconData, GLinkData } from '@/types/GPanel.model';
-	import NoHayIcon from '@/assets/icon/NoHayIcon/NoHayIcon.svg';
+	import NoHayIcon from '$lib/assets/icon/NoHayIcon/NoHayIcon.svg';
 
 	export let links: GLinkData[];
 	console.log('GIconRed->', links);
