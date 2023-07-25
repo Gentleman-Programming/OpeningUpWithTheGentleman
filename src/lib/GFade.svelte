@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { AnimationTypes } from '../models';
+
 	import type { CustomElement } from '../models/intersector.model';
 	import { customIntersectionObserver } from '../utilities/intersector.utility';
+	import { AnimationTypes } from '@/models/animation.model';
 
 	export let animation = AnimationTypes.FADE;
 
