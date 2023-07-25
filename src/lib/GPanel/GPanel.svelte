@@ -13,11 +13,12 @@
 			const response = await fetch(url);
 			if (response.ok) {
 				cards = await response.json();
+				console.log("GPanel->", cards);
 			} else {
 				throw new Error('Error fetching data: ' + response.status);
 			}
 		} catch (error) {
-			console.error(error);
+			console.error("GPanel->",error);
 		}
 	});
 </script>

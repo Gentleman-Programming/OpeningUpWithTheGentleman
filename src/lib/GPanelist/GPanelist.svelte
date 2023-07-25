@@ -7,7 +7,7 @@
 
 	export let card: GCardData;
   let links: GLinkData[] = [...card.links];
-	console.log('GCard->',links);
+	console.log('GPanelList->',links);
 </script>
 {#if card}
     <GText variant={TextElementType.H3} class="text-center">
@@ -18,7 +18,7 @@
       <img class="img" src={card.img} alt={card.name} />
       <figcaption class="figcaption">
         <p>{card.name}</p>
-        <div class="card">
+        <div class="icons">
           <GIconRed {links} />
         </div>
       </figcaption>

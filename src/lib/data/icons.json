@@ -51,12 +51,32 @@
   },
   {
     "id": "11",
-    "name": "profileWebsite",
+    "name": "ProfileWeb",
     "path": "./src/assets/icon/profileWebsiteIcon/profileWebsiteIcon.svg"
   },
   {
     "id": "12",
     "name": "GentlemanProgramming",
     "path": "./src/assets/icon/GentlemanProgrammingIcon/GentlemanProgrammingIcon.svg"
+  },
+  {
+    "id": "13",
+    "name": "NoHayIcon",
+    "path": "./src/assets/icon/NoHayIcon/NoHayIcon.svg"
+  },
+  {
+    "id": "14",
+    "name": "NoHayInv",
+    "path": "./src/assets/icon/NoHayInv/NoHayInv.svg"
+  },
+  {
+    "id": "15",
+    "name": "Email",
+    "path": "./src/assets/icon/EmailIcon/EmailIcon.svg"
+  },
+  {
+    "id": "16",
+    "name": "Beacons",
+    "path": "./src/assets/icon/BeaconsIcon/BeaconsIcon.svg"
   }
 ]

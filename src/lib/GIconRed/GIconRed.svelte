@@ -1,38 +1,42 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
 	import GText from '@/lib/GText.svelte';
+	import { onMount } from 'svelte';
 	import type { GIconData, GLinkData } from '@/types/GPanel';
+	import NoHayIcon from '@/assets/icon/NoHayIcon/NoHayIcon.svg';
 
 	export let links: GLinkData[];
-	console.log('GLink->', links);
+	console.log('GIconRed->', links);
 	let icons: GIconData[] = [];
-  const url = './src/lib/data/icons.json';
+	const url = './src/lib/data/icons.json';
 	onMount(async () => {
 		try {
 			const response = await fetch(url);
 			if (response.ok) {
 				icons = await response.json();
-				console.log('GLink->', icons);
+				console.log('GIconRed->', icons);
 			} else {
 				throw new Error('Error fetching data: ' + response.status);
 			}
 		} catch (error) {
-			console.error(error);
+			console.error('GIconRed->', error);
 		}
 	});
 </script>
 
 {#if links}
-  {#each links as link (link.red)}
-    {#each icons as icon (icon.name)}
-      {#if icon.name === link.red}
-        <a href={link.url}>
-          <img class="img" src={icon.path} alt={link.red} />
-        </a>
-      {/if}
-    {/each}
-  {/each}
+	{#each links as link}
+		<a href={link.url} target="_blank">
+			{#if link.red && !icons.some(icon => icon.name === link.red)}
+				<img class="img" src={NoHayIcon} alt={link.red} />
+			{:else}
+					{#each icons.filter(icon => icon.name === link.red) as icon}
+						<img class="img" src={icon.path} alt={link.red} />
+					{/each}
+			{/if}
+		</a>
+	{/each}
 {:else}
-  <GText class="text-center">No se cargaron los icons en GIconRed.</GText>
+	<GText class="text-center">
+		No se cargaron los icons en GIconRed.
+	</GText>
 {/if}
-

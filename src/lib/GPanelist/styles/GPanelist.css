@@ -1,9 +1,7 @@
-
-
 .figure {
 	width: 100%;
 	aspect-ratio: 1;
-	margin: 0 0 40px;
+	margin: 0 0 40px 0;
 	padding: 5px 20px 0;
 	box-sizing: border-box;
 	display: grid;
@@ -72,9 +70,9 @@
 	transform: perspective(500px) translateY(100%) rotateX(0);
 }
 
-.card {
+.icons {
   display: flex;
-	padding: 10px 0 10px 0;
+	padding: 10px 5px;
   flex-direction: row;
 	justify-content: space-around;
 	align-content: space-between;
