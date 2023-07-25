@@ -2,7 +2,7 @@
 	import GCard from '@/lib/GCard/GCard.svelte';
 	import GText from '@/lib/GText.svelte';
 	import { TextElementType } from '@/models/GText.model';
-	import type { GCardData } from '@/types/GPanel';
+	import type { GCardData } from '@/types/GPanel.model';
 	import { onMount } from 'svelte';
 	import './styles/GPanel.css';
 

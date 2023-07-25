@@ -1,7 +1,7 @@
 <script lang="ts">
 	import GText from '@/lib/GText.svelte';
 	import { onMount } from 'svelte';
-	import type { GIconData, GLinkData } from '@/types/GPanel';
+	import type { GIconData, GLinkData } from '@/types/GPanel.model';
 	import NoHayIcon from '@/assets/icon/NoHayIcon/NoHayIcon.svg';
 
 	export let links: GLinkData[];
@@ -26,17 +26,15 @@
 {#if links}
 	{#each links as link}
 		<a href={link.url} target="_blank">
-			{#if link.red && !icons.some(icon => icon.name === link.red)}
+			{#if link.red && !icons.some((icon) => icon.name === link.red)}
 				<img class="img" src={NoHayIcon} alt={link.red} />
 			{:else}
-					{#each icons.filter(icon => icon.name === link.red) as icon}
-						<img class="img" src={icon.path} alt={link.red} />
-					{/each}
+				{#each icons.filter((icon) => icon.name === link.red) as icon}
+					<img class="img" src={icon.path} alt={link.red} />
+				{/each}
 			{/if}
 		</a>
 	{/each}
 {:else}
-	<GText class="text-center">
-		No se cargaron los icons en GIconRed.
-	</GText>
+	<GText class="text-center">No se cargaron los icons en GIconRed.</GText>
 {/if}

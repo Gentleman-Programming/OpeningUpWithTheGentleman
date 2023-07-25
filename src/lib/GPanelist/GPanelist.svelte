@@ -2,7 +2,7 @@
 	import GText from '@/lib/GText.svelte';
 	import GIconRed from '@/lib/GIconRed/GIconRed.svelte';
 	import { TextElementType } from '@/models/GText.model';
-	import type { GCardData, GLinkData } from '@/types/GPanel';
+	import type { GCardData, GLinkData } from '@/types/GPanel.model';
 	import './styles/GPanelist.css';
 
 	export let card: GCardData;
@@ -27,4 +27,3 @@
 {:else}
 	<GText class="text-center">No se pudo cargaron los panelists en GCard.</GText>
 {/if}
-
