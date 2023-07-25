@@ -2,81 +2,81 @@
   {
     "id": "1",
     "name": "Discord",
-    "path": "./src/lib/assets/icon/DiscordIcon/DiscordIcon.svg"
+    "path": "/icon/DiscordIcon/DiscordIcon.svg"
   },
   {
     "id": "2",
     "name": "Facebook",
-    "path": "./src/lib/assets/icon/FacebookIcon/FacebookIcon.svg"
+    "path": "/icon/FacebookIcon/FacebookIcon.svg"
   },
   {
     "id": "3",
     "name": "GitHub",
-    "path": "./src/lib/assets/icon/GithubIcon/GithubIcon.svg"
+    "path": "/icon/GithubIcon/GithubIcon.svg"
   },
   {
     "id": "4",
     "name": "Instagram",
-    "path": "./src/lib/assets/icon/InstagramIcon/InstagramIcon.svg"
+    "path": "/icon/InstagramIcon/InstagramIcon.svg"
   },
   {
     "id": "5",
     "name": "LinkedIn",
-    "path": "./src/lib/assets/icon/LinkedInIcon/LinkedInIcon.svg"
+    "path": "/icon/LinkedInIcon/LinkedInIcon.svg"
   },
   {
     "id": "6",
     "name": "TikTok",
-    "path": "./src/lib/assets/icon/TikTokIcon/TikTokIcon.svg"
+    "path": "/icon/TikTokIcon/TikTokIcon.svg"
   },
   {
     "id": "7",
     "name": "Twitch",
-    "path": "./src/lib/assets/icon/TwitchIcon/TwitchIcon.svg"
+    "path": "/icon/TwitchIcon/TwitchIcon.svg"
   },
   {
     "id": "8",
     "name": "Twitter",
-    "path": "./src/lib/assets/icon/TwitterIcon/TwitterIcon.svg"
+    "path": "/icon/TwitterIcon/TwitterIcon.svg"
   },
   {
     "id": "9",
     "name": "YouTube",
-    "path": "./src/lib/assets/icon/YouTubeIcon/YouTubeIcon.svg"
+    "path": "/icon/YouTubeIcon/YouTubeIcon.svg"
   },
   {
     "id": "10",
     "name": "Web",
-    "path": "./src/lib/assets/icon/WebIcon/WebIcon.svg"
+    "path": "/icon/WebIcon/WebIcon.svg"
   },
   {
     "id": "11",
     "name": "ProfileWeb",
-    "path": "./src/assets/icon/profileWebsiteIcon/profileWebsiteIcon.svg"
+    "path": "/icon/profileWebsiteIcon/profileWebsiteIcon.svg"
   },
   {
     "id": "12",
     "name": "GentlemanProgramming",
-    "path": "./src/assets/icon/GentlemanProgrammingIcon/GentlemanProgrammingIcon.svg"
+    "path": "/icon/GentlemanProgrammingIcon/GentlemanProgrammingIcon.svg"
   },
   {
     "id": "13",
     "name": "NoHayIcon",
-    "path": "./src/assets/icon/NoHayIcon/NoHayIcon.svg"
+    "path": "/icon/NoHayIcon/NoHayIcon.svg"
   },
   {
     "id": "14",
     "name": "NoHayInv",
-    "path": "./src/assets/icon/NoHayInv/NoHayInv.svg"
+    "path": "/icon/NoHayInv/NoHayInv.svg"
   },
   {
     "id": "15",
     "name": "Email",
-    "path": "./src/assets/icon/EmailIcon/EmailIcon.svg"
+    "path": "/icon/EmailIcon/EmailIcon.svg"
   },
   {
     "id": "16",
     "name": "Beacons",
-    "path": "./src/assets/icon/BeaconsIcon/BeaconsIcon.svg"
+    "path": "/icon/BeaconsIcon/BeaconsIcon.svg"
   }
 ]

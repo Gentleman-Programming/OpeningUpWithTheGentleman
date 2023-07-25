@@ -2,7 +2,6 @@
 	import GText from '@/lib/GText.svelte';
 	import { onMount } from 'svelte';
 	import type { GIconData, GLinkData } from '@/types/GPanel.model';
-	import NoHayIcon from '$lib/assets/icon/NoHayIcon/NoHayIcon.svg';
 
 	export let links: GLinkData[];
 	console.log('GIconRed->', links);
@@ -27,7 +26,7 @@
 	{#each links as link}
 		<a href={link.url} target="_blank">
 			{#if link.red && !icons.some((icon) => icon.name === link.red)}
-				<img class="img" src={NoHayIcon} alt={link.red} />
+				<img class="img" src={'/icon/NoHayIcon/NoHayIcon.svg'} alt={link.red} />
 			{:else}
 				{#each icons.filter((icon) => icon.name === link.red) as icon}
 					<img class="img" src={icon.path} alt={link.red} />
