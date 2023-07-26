@@ -51,9 +51,7 @@
 		<div class="button-container">
 			<GText variant={TextElementType.H3}>¿ Quieres participar ?</GText>
 
-			<GButton fontSize={ButtonFontSize.LARGE} on:click={() => (window.location.href = '/contact')}>
-				Click Aquí !
-			</GButton>
+			<GButton fontSize={ButtonFontSize.LARGE} href="/contact">Click Aquí !</GButton>
 		</div>
 	</GAnimate>
 </div>
