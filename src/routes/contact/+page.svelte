@@ -107,7 +107,7 @@
 			</fieldset>
 
 			<div>
-				<label for="message">¿Cuáles son tus expectativas al comunicarte con el Gentleman?</label>
+				<label for="message">¿ Cuáles son tus expectativas al comunicarte con el Gentleman ?</label>
 				<textarea name="message" id="message" />
 			</div>
 
