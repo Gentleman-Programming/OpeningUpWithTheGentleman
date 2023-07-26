@@ -1,11 +1,13 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { AnimationTypes } from '../models';
+
 	import type { CustomElement } from '../models/intersector.model';
 	import { customIntersectionObserver } from '../utilities/intersector.utility';
+	import { AnimationTypes } from '@/models/animation.model';
 
 	export let animation = AnimationTypes.FADE;
 
+	export let container: boolean = false;
 	let customElement = {} as CustomElement;
 	let animate = false;
 	let componentRef: HTMLDivElement;
@@ -20,7 +22,8 @@
 	});
 </script>
 
-<div bind:this={componentRef}>
+{container}
+<div class={container ? 'section-container' : ''} bind:this={componentRef}>
 	{#if animate}
 		<div transition:animation={{ duration: 1500 }}>
 			<slot />

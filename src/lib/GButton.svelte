@@ -1,13 +1,21 @@
 <script lang="ts">
-	import { ButtonTypes, ButtonFontSize } from '../models';
+	import { ButtonFontSize, ButtonTypes } from '@/models';
 
 	export let type: ButtonTypes = ButtonTypes.BUTTON;
 	export let fontSize: ButtonFontSize = ButtonFontSize.MEDIUM;
+	export let href: string = '';
+	export let disabled = false;
 </script>
 
-<button class="button" {type} style="font-size: {fontSize};">
-	<slot />
-</button>
+{#if !!href}
+	<a {href} class="button" {type} style="font-size: {fontSize};">
+		<slot />
+	</a>
+{:else}
+	<button on:click {disabled} class="button" {type} style="font-size: {fontSize};">
+		<slot />
+	</button>
+{/if}
 
 <style>
 	.button {
@@ -20,9 +28,12 @@
 		cursor: pointer;
 		flex-shrink: 0;
 		transition: background-color 0.5s ease;
-		text-shadow: 0px 4px 4px 4px #89024a;
+		text-shadow: 0px 4px 4px #89024a;
+		display: inline-block;
 	}
-	.button:hover {
-		background-color: var(--secondary-dark);
+	@media (hover: hover) {
+		.button:hover {
+			background-color: var(--secondary-dark);
+		}
 	}
 </style>

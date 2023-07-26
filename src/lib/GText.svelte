@@ -1,10 +1,11 @@
 <script lang="ts">
-	import { TextElementType } from '@/models/GText.d';
+	import { TextElementType } from '@/models/GText.model';
 
+	export const id: string = '';
 	export let variant: TextElementType = TextElementType.P;
 </script>
 
-<svelte:element this={variant} class="text-element {$$restProps.class || ''}">
+<svelte:element this={variant} {id} class="text-element {$$restProps.class || ''}">
 	<slot />
 </svelte:element>
 
@@ -14,19 +15,20 @@
 		text-shadow: 0 4px 4px #89024a;
 		font-family: VT323;
 	}
+
 	h1 {
-		font-size: 4rem;
+		font-size: max(8vw, 5rem);
 	}
 
 	h2 {
-		font-size: 2.25rem;
+		font-size: max(6vw, 4rem);
 	}
 
 	h3 {
-		font-size: 2rem;
+		font-size: max(4vw, 3rem);
 	}
 
 	p {
-		font-weight: 1rem;
+		font-size: clamp(1.7rem, 1.7rem + 2vw, 1.7rem);
 	}
 </style>

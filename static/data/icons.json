@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "name": "Discord",
+    "path": "/icon/DiscordIcon/DiscordIcon.svg"
+  },
+  {
+    "id": "2",
+    "name": "Facebook",
+    "path": "/icon/FacebookIcon/FacebookIcon.svg"
+  },
+  {
+    "id": "3",
+    "name": "GitHub",
+    "path": "/icon/GithubIcon/GithubIcon.svg"
+  },
+  {
+    "id": "4",
+    "name": "Instagram",
+    "path": "/icon/InstagramIcon/InstagramIcon.svg"
+  },
+  {
+    "id": "5",
+    "name": "LinkedIn",
+    "path": "/icon/LinkedInIcon/LinkedInIcon.svg"
+  },
+  {
+    "id": "6",
+    "name": "TikTok",
+    "path": "/icon/TikTokIcon/TikTokIcon.svg"
+  },
+  {
+    "id": "7",
+    "name": "Twitch",
+    "path": "/icon/TwitchIcon/TwitchIcon.svg"
+  },
+  {
+    "id": "8",
+    "name": "Twitter",
+    "path": "/icon/TwitterIcon/TwitterIcon.svg"
+  },
+  {
+    "id": "9",
+    "name": "YouTube",
+    "path": "/icon/YouTubeIcon/YouTubeIcon.svg"
+  },
+  {
+    "id": "10",
+    "name": "Web",
+    "path": "/icon/WebIcon/WebIcon.svg"
+  },
+  {
+    "id": "11",
+    "name": "ProfileWeb",
+    "path": "/icon/profileWebsiteIcon/profileWebsiteIcon.svg"
+  },
+  {
+    "id": "12",
+    "name": "GentlemanProgramming",
+    "path": "/icon/GentlemanProgrammingIcon/GentlemanProgrammingIcon.svg"
+  },
+  {
+    "id": "13",
+    "name": "NoHayIcon",
+    "path": "/icon/NoHayIcon/NoHayIcon.svg"
+  },
+  {
+    "id": "14",
+    "name": "NoHayInv",
+    "path": "/icon/NoHayInv/NoHayInv.svg"
+  },
+  {
+    "id": "15",
+    "name": "Email",
+    "path": "/icon/EmailIcon/EmailIcon.svg"
+  },
+  {
+    "id": "16",
+    "name": "Beacons",
+    "path": "/icon/BeaconsIcon/BeaconsIcon.svg"
+  }
+]

@@ -1,0 +1,9 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40px"
+  height="40px"
+  viewBox="0 0 40 40"
+  fillRule="nonzero"
+>
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;" d="M 13.999219 7.000781 L 18 7.000781 L 18 3 L 13.999219 3 C 11.238281 3 9 5.238281 9 7.999219 L 9 10.999219 L 6 10.999219 L 6 15 L 9 15 L 9 21 L 13.000781 21 L 13.000781 15 L 16.000781 15 L 16.999219 10.999219 L 13.000781 10.999219 L 13.000781 7.999219 C 13.000781 7.448437 13.448437 7.000781 13.999219 7.000781 Z M 13.999219 7.000781 " transform="matrix(1.666667,0,0,1.666667,0,0)"/>
+</svg>

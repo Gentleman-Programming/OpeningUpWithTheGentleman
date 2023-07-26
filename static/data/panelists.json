@@ -1,0 +1,167 @@
+[
+  {
+    "id": "1",
+    "date": "",
+    "rol": "presentador",
+    "time": "",
+    "name": "Alan Buscaglia",
+    "img": "/img/presentador.png",
+    "links": [
+      {
+        "key": "1",
+        "red": "Discord",
+        "url": "https://discord.com/invite/KEavKkDc5Y"
+      },
+      {
+        "key": "2",
+        "red": "Twitch",
+        "url": "https://www.twitch.tv/gentleman_programming"
+      },
+      {
+        "key": "3",
+        "red": "Twitter",
+        "url": "https://twitter.com/G_Programming"
+      },
+      {
+        "key": "3",
+        "red": "Facebook",
+        "url": "https://shorturl.at/jkmL6"
+      },
+      {
+        "key": "4",
+        "red": "Instagram",
+        "url": "https://www.instagram.com/gentlemanprogramming/"
+      },
+      {
+        "key": "5",
+        "red": "GitHub",
+        "url": "https://github.com/Gentleman-Programming"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "date": "Martes, 25 de Julio",
+    "rol": "invitado",
+    "time": "21:30 hs España",
+    "name": "David Huertas",
+    "img": "/img/David.png",
+    "links": [
+      {
+        "key": "1",
+        "red": "Discord",
+        "url": "https://discord.com/invite/3sWGgBzXQd"
+      },
+      {
+        "key": "2",
+        "red": "Twitch",
+        "url": "https://www.twitch.tv/ikurotime"
+      },
+      {
+        "key": "3",
+        "red": "Instagram",
+        "url": "https://www.instagram.com/ikurotime"
+      },
+      {
+        "key": "4",
+        "red": "Twitter",
+        "url": "https://twitter.com/ikurotime"
+      },
+      {
+        "key": "5",
+        "red": "YouTube",
+        "url": "https://www.youtube.com/channel/UCFWJHnaItB4ueAm14lcRDVw"
+      },
+      {
+        "key": "6",
+        "red": "TikTok",
+        "url": "https://www.tiktok.com/@ikurotime"
+      },
+      {
+        "key": "7",
+        "red": "ProfileWeb",
+        "url": "https://davidhuertas.dev"
+      },
+      {
+        "key": "8",
+        "red": "LinkedIn",
+        "url": "https://www.linkedin.com/in/david-huertas-ortiz"
+      },
+      {
+        "key": "9",
+        "red": "GitHub",
+        "url": "https://github.com/ikurotime"
+      },
+      {
+        "key": "10",
+        "red": "Beacons",
+        "url": "https://beacons.ai/ikurotime"
+      },
+      {
+        "key": "11",
+        "red": "Email",
+        "url": "mailto:davidhuertasortiz@gmail.com;"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "date": "Miércoles, 26 de Abril",
+    "rol": "invitado",
+    "time": "21:30 hs España",
+    "name": "Daniel Nuske",
+    "img": "/img/Daniel.png",
+    "links": [
+      {
+        "key": "1",
+        "red": "LinkedIn",
+        "url": "https://www.linkedin.com/in/dnuske"
+      },
+      {
+        "key": "2",
+        "red": "Twitter",
+        "url": "https://twitter.com/dnuske"
+      },
+      {
+        "key": "3",
+        "red": "YouTube",
+        "url": "https://www.youtube.com/dnuske"
+      },
+      {
+        "key": "4",
+        "red": "ProfileWeb",
+        "url": "https://danielnuske.com/"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "date": "Viernes, 28 de Julio",
+    "rol": "invitado",
+    "time": "21:30 hs España",
+    "name": "Arturo Zarzalejo",
+    "img": "/img/Arturo.png",
+    "links": [
+      {
+        "key": "1",
+        "red": "Twitch",
+        "url": "https://www.twitch.tv/arturodevelop"
+      },
+      {
+        "key": "2",
+        "red": "Twitter",
+        "url": "https://twitter.com/ArturoZarzalejo"
+      },
+      {
+        "key": "3",
+        "red": "Discord",
+        "url": "https://discord.com/invite/rfqrBtzcSs"
+      },
+      {
+        "key": "4",
+        "red": "LinkedIn",
+        "url": "https://www.linkedin.com/in/arturo-zarzalejo-hern%C3%A1ndez-b900b789/"
+      }
+    ]
+  }
+]

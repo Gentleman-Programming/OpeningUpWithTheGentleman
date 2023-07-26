@@ -1,7 +1,7 @@
 export interface CustomElement {
   element: Element;
   callBack: () => void;
-};
+}
 
 class CustomIntersectionObserver {
   private observer: IntersectionObserver | null = null;
@@ -9,18 +9,24 @@ class CustomIntersectionObserver {
 
   private init() {
     if (typeof IntersectionObserver !== undefined)
-      this.observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry, index) => {
-          if (entry.isIntersecting) {
-            this.interceptCallback(index);
-          }
-        });
-      });
-
+      this.observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              this.interceptCallback(entry);
+            }
+          });
+        },
+      );
   }
 
-  private interceptCallback(index: number) {
-    this.customEntries[index].callBack();
+  private interceptCallback(entry: IntersectionObserverEntry) {
+    const foundElement = this.customEntries.find(
+      (customElement) => JSON.stringify(customElement.element) === JSON.stringify(entry.target)
+    );
+    if (foundElement) {
+      foundElement.callBack();
+    }
   }
 
   observeElement(customElement: CustomElement) {
@@ -32,7 +38,9 @@ class CustomIntersectionObserver {
   unobserveElement(customElement: CustomElement) {
     this.observer!.unobserve(customElement.element);
     this.customEntries = this.customEntries.filter(
-      (customElement) => JSON.stringify(customElement.element) !== JSON.stringify(customElement.element))
+      (customElement) =>
+        JSON.stringify(customElement.element) !== JSON.stringify(customElement.element)
+    );
   }
 }
 
