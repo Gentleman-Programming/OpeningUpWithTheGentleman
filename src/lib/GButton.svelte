@@ -7,15 +7,16 @@
 	export let disabled = false;
 </script>
 
-{#if !!href}
-	<a {href} class="button" {type} style="font-size: {fontSize};">
-		<slot />
-	</a>
-{:else}
-	<button on:click {disabled} class="button" {type} style="font-size: {fontSize};">
-		<slot />
-	</button>
-{/if}
+<svelte:element
+	this={href ? 'a' : 'button'}
+	{disabled}
+	{href}
+	class="button"
+	{type}
+	style="font-size: {fontSize};"
+>
+	<slot />
+</svelte:element>
 
 <style>
 	.button {

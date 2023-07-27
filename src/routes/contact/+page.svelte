@@ -41,7 +41,7 @@
 
 <main>
 	<div class="go-back">
-		<GButton on:click={() => (window.location.href = '/')}>👈</GButton>
+		<GButton href="/">👈</GButton>
 		<GText>Volver Atrás</GText>
 	</div>
 
