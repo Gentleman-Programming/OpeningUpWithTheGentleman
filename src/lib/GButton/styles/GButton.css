@@ -16,3 +16,19 @@
 		background-color: var(--secondary-dark);
 	}
 }
+
+@keyframes moverIzquierda {
+	0% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(-30px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.go-back:hover{
+	animation: moverIzquierda 1.5s infinite;
+}

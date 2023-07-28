@@ -54,6 +54,7 @@
 			<GButton fontSize={ButtonFontSize.LARGE} on:click={() => (window.location.href = '/contact')}>
 				Click Aquí !
 			</GButton>
+			<GButton on:click={() => (window.location.href = '/')}><div class="go-back">👈</div></GButton>
 		</div>
 	</GAnimate>
 </div>
