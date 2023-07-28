@@ -1,6 +1,6 @@
 <script lang="ts">
-	import GText from '@/lib/GText.svelte';
-	import type { GIconData, GLinkData } from '@/types/GPanel.model';
+	import GText from '@/lib/GText/GText.svelte';
+	import type { GIconData, GLinkData } from '@/models/GPanel.model';
 	import { onMount } from 'svelte';
 
 	export let links: GLinkData[];
@@ -27,10 +27,10 @@
 {#if links}
 	{#each links as link}
 		<a href={link.url} target="_blank">
-			{#if link.red && !mappedIcons.has(link.red)}
-				<img class="img" src={'/icon/NoHayIcon/NoHayIcon.svg'} alt={link.red} />
+			{#if link.network && !mappedIcons.has(link.network)}
+				<img class="img" src={'/icon/NoHayIcon/NoHayIcon.svg'} alt={link.network} />
 			{:else}
-				<img class="img" src={mappedIcons.get(link.red)} alt={link.red} />
+				<img class="img" src={mappedIcons.get(link.network)} alt={link.network} />
 			{/if}
 		</a>
 	{/each}

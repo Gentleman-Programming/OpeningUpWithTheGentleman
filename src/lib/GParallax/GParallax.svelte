@@ -1,6 +1,6 @@
 <script>
 	import { TextElementType } from '@/models/GText.model';
-	import GText from './GText.svelte';
+	import GText from '../GText/GText.svelte';
 
 	export let img = '/img/header-bg.jpg';
 

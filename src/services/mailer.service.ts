@@ -9,8 +9,8 @@ type senMailProps = {
 };
 
 export async function sendMail({ html }: senMailProps) {
-  /* 
-  TODO: 
+  /*
+  TODO:
   from: replace from to form email.
   to: replace email Gentleman
   */

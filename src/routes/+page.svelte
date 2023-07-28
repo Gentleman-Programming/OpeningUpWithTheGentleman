@@ -1,13 +1,12 @@
 <script>
-	import GAnimate from '@/lib/GAnimate.svelte';
-	import GButton from '@/lib/GButton.svelte';
+	import GAnimate from '@/lib/GAnimate/GAnimate.svelte';
+	import GButton from '@/lib/GButton/GButton.svelte';
 	import GFooter from '@/lib/GFooter/GFooter.svelte';
 	import GPanel from '@/lib/GPanel/GPanel.svelte';
-	import GParallax from '@/lib/GParallax.svelte';
-	import GText from '@/lib/GText.svelte';
+	import GParallax from '@/lib/GParallax/GParallax.svelte';
+	import GText from '@/lib/GText/GText.svelte';
 	import GTop from '@/lib/GTop/GTop.svelte';
-	import { AnimationTypes, ButtonFontSize } from '@/models';
-	import { TextElementType } from '@/models/GText.model';
+	import { AnimationTypes, ButtonFontSize, TextElementType } from '@/models';
 </script>
 
 <GParallax>“Opening Up With The Gentleman”</GParallax>
@@ -38,6 +37,7 @@
 	</GAnimate>
 
 	<GAnimate container animation={AnimationTypes.FADE}>
+
 		<GText variant={TextElementType.H3} class="text-center">
 			¿ Quienes ya confirmaron su participación ?
 		</GText>

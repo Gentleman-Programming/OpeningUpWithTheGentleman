@@ -1,8 +1,8 @@
 <script lang="ts">
-	import GText from '@/lib/GText.svelte';
-	import GIconRed from '@/lib/GIconRed/GIconRed.svelte';
+	import GText from '@/lib/GText/GText.svelte';
+	import GIconRed from '@/lib/GIconNetwork/GIconNetwork.svelte';
 	import { TextElementType } from '@/models/GText.model';
-	import type { GCardData, GLinkData } from '@/types/GPanel.model';
+	import type { GCardData, GLinkData } from '@/models/GPanel.model';
 	import './styles/GPanelist.css';
 
 	export let card: GCardData;

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import GPanelist from '@/lib/GPanelist/GPanelist.svelte';
-	import GText from '@/lib/GText.svelte';
-	import type { GCardData } from '@/types/GPanel.model';
+	import GText from '@/lib/GText/GText.svelte';
+	import type { GCardData } from '@/models/GPanel.model';
 	import './styles/GCard.css';
 
 	export let card: GCardData;

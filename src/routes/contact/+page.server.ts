@@ -19,7 +19,7 @@ export const actions = {
 		<table>
 			<tr>
 				<td style="padding:10px">
-				Nombre: 
+				Nombre:
 				</td>
 				<td style="padding:10px">
 				${formData.name}
@@ -27,7 +27,7 @@ export const actions = {
 			</tr>
 			<tr>
 				<td style="padding:10px">
-				Email: 
+				Email:
 				</td>
 				<td style="padding:10px">
 				${formData.email}
@@ -35,7 +35,7 @@ export const actions = {
 			</tr>
 			<tr>
 				<td style="padding:10px">
-				Redes Sociales: 
+				Redes Sociales:
 				</td>
 				<td style="padding:10px">
 				${social_networks.join(', ')}
@@ -43,7 +43,7 @@ export const actions = {
 			</tr>
 			<tr>
 				<td style="padding:10px">
-				Mensaje: 
+				Mensaje:
 				</td>
 				<td style="padding:10px">
 				${formData.message}

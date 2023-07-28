@@ -1,5 +1,5 @@
 <script lang="ts">
-	import GText from '../GText.svelte';
+	import GText from '../GText/GText.svelte';
 	import './styles/GFooter.css';
   const year = new Date().getFullYear();
 </script>

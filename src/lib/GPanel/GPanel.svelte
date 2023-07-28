@@ -1,9 +1,8 @@
 <script lang="ts">
 	import GCard from '@/lib/GCard/GCard.svelte';
-	import GText from '@/lib/GText.svelte';
-	import { TextElementType } from '@/models/GText.model';
-	import type { GCardData } from '@/types/GPanel.model';
+	import GText from '@/lib/GText/GText.svelte';
 	import { onMount } from 'svelte';
+	import { TextElementType, type GCardData } from '@/models';
 	import './styles/GPanel.css';
 
 	let cards: GCardData[] = [];

@@ -1,6 +1,6 @@
 export interface GLinkData {
   key: string;
-  red: string;
+  network: string;
   url: string;
 }
 

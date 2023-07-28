@@ -1,9 +1,9 @@
 <script lang="ts">
+	import GButton from '@/lib/GButton/GButton.svelte';
+	import GText from '@/lib/GText/GText.svelte';
 	import { enhance } from '$app/forms';
-	import GButton from '@/lib/GButton.svelte';
-	import GText from '@/lib/GText.svelte';
-	import { ButtonTypes } from '@/models';
-	import { TextElementType } from '@/models/GText.model.js';
+	import { ButtonTypes, TextElementType } from '@/models';
+	import './styles/contact.css';
 
 	enum ACTION_SOCIAL_NETWORKS {
 		'ADD' = 'add',
@@ -206,4 +206,5 @@
 		gap: 2rem;
 		align-items: center;
 	}
+
 </style>
